@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameZone - Tienda de Videojuegos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- CABECERA -->
+    <header>
+
+        <a href="#" class="logo">
+            Game<span>Zone</span>
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Videojuegos</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <a href="#" class="cart">
+            🛒 Carrito
+        </a>
+
+    </header>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+
+        <!-- PRESENTACIÓN -->
+        <section class="presentacion">
+
+            <h1>
+                Bienvenido a <span>GameZone</span>
+            </h1>
+
+            <p>
+                Tu tienda online especializada en videojuegos.
+                Descubre los últimos lanzamientos, clásicos inolvidables
+                y las mejores ofertas para todas tus plataformas favoritas.
+            </p>
+
+            <a href="#" class="boton">
+                Explorar videojuegos
+            </a>
+
+        </section>
+
+
+        <!-- TARJETAS -->
+        <section class="temas">
+
+            <!-- TARJETA LANZAMIENTOS -->
+            <div class="tarjeta" onclick="mostrarMensaje('lanzamientos', this)">
+
+                <div class="icono">
+                    🎮
+                </div>
+
+                <h2>
+                    Nuevos lanzamientos
+                </h2>
+
+                <p class="informacion"></p>
+
+                <a href="#" onclick="event.preventDefault();">
+                    Ver lanzamientos →
+                </a>
+
+            </div>
+
+
+            <!-- TARJETA OFERTAS -->
+            <div class="tarjeta" onclick="mostrarMensaje('ofertas', this)">
+
+                <div class="icono">
+                    🔥
+                </div>
+
+                <h2>
+                    Ofertas
+                </h2>
+
+                <p class="informacion"></p>
+
+                <a href="#" onclick="event.preventDefault();">
+                    Ver ofertas →
+                </a>
+
+            </div>
+
+
+            <!-- TARJETA PLATAFORMAS -->
+            <div class="tarjeta" onclick="mostrarMensaje('plataformas', this)">
+
+                <div class="icono">
+                    🕹️
+                </div>
+
+                <h2>
+                    Todas las plataformas
+                </h2>
+
+                <p class="informacion"></p>
+
+                <a href="#" onclick="event.preventDefault();">
+                    Ver plataformas →
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+
+        <div class="footer-contenido">
+
+            <!-- INFORMACIÓN -->
+            <div class="footer-columna">
+
+                <h3>
+                    Game<span>Zone</span>
+                </h3>
+
+                <p>
+                    Tu tienda de videojuegos de confianza.
+                    Encuentra tus juegos favoritos, descubre nuevos
+                    títulos y disfruta de las mejores ofertas.
+                </p>
+
+            </div>
+
+
+            <!-- ENLACES -->
+            <div class="footer-columna">
+
+                <h4>
+                    Enlaces
+                </h4>
+
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Videojuegos</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                </ul>
+
+            </div>
+
+
+            <!-- SOPORTE -->
+            <div class="footer-columna">
+
+                <h4>
+                    Soporte
+                </h4>
+
+                <p>
+                    📞 <strong>900 123 456</strong>
+                </p>
+
+                <p>
+                    📧 soporte@gamezone.com
+                </p>
+
+                <p>
+                    🕐 Lunes - Viernes: 09:00 - 20:00
+                </p>
+
+            </div>
+
+
+            <!-- REDES SOCIALES -->
+            <div class="footer-columna">
+
+                <h4>
+                    Síguenos
+                </h4>
+
+                <div class="redes">
+
+                    <a href="#" title="Instagram">
+                        📷
+                    </a>
+
+                    <a href="#" title="Twitter / X">
+                        𝕏
+                    </a>
+
+                    <a href="#" title="YouTube">
+                        ▶️
+                    </a>
+
+                    <a href="#" title="Discord">
+                        🎧
+                    </a>
+
+                </div>
+
+                <p class="redes-texto">
+                    ¡Síguenos para conocer las últimas novedades!
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- PARTE INFERIOR -->
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 GameZone. Todos los derechos reservados.
+            </p>
+
+            <div>
+
+                <a href="#">
+                    Política de privacidad
+                </a>
+
+                <a href="#">
+                    Términos y condiciones
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="funciones.js"></script>
+
+</body>
+
+</html>

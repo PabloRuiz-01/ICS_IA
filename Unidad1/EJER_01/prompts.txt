@@ -1,0 +1,6 @@
+Diseña una pagina puramente con css y html de una tienda de videojuegos, de momento haz la cabezera que sera estatica y 
+debajo de ella una zona con la descripcion de la pagina.
+
+Vale, ahora añade debajo de la explicacion 3 tarjetas sobre diferentes temas
+
+Y para finalizar crea un pie de pagina en el cual este informacion sobre la paguina,  telefono de soprte redes sociales, etc
