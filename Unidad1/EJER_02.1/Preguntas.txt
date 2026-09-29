@@ -1,0 +1,43 @@
+1. ¿En qué archivo está el punto de entrada de la aplicación? ¿Qué hace la función `createRoot`?
+
+    Punto de entrada: src/main.jsx. createRoot() crea la 
+    raíz de React asociada a un elemento del DOM y permite renderizar ahí la aplicación.
+
+2. ¿Cuál es el ID del elemento HTML donde se monta la aplicación? ¿En qué archivo está definido?
+
+    El ID es root, definido en index.html
+
+3. Dibuja el árbol de componentes que se renderiza al arrancar el proyecto recién creado.
+
+    <StrictMode>
+    └── <App>
+        └── <div>
+            ├── <h1>Vite + React</h1>
+            └── ...
+
+4. ¿Qué ocurre en la página si eliminas `<StrictMode>` de `main.jsx`? ¿Y en la consola en modo desarrollo?
+
+    Si eliminas <StrictMode>, la página se ve igual. En desarrollo, React deja de ejecutar intencionadamente 
+    ciertas comprobaciones adicionales de StrictMode, por lo que pueden desaparecer ejecuciones duplicadas de 
+    determinadas funciones/efectos en consola.
+
+5. Abre `App.jsx` y localiza tres fragmentos de código JavaScript escritos entre llaves `{ }` dentro del JSX. Explica 
+qué hace cada uno.
+
+    -import { useState } from 'react': Importa useState desde React para poder crear y gestionar estado dentro de un componente.
+    -const [count, setCount] = useState(0): Crea un estado llamado count con valor inicial 0.
+    -onClick={() => setCount((count) => count + 1)}: Cada clic aumenta el contador en 1.
+
+6. ¿Qué es el elemento `<>` que envuelve el JSX devuelto por `App`? ¿Genera algún elemento en el
+ DOM? Compruébalo con las herramientas de desarrollo del navegador (pestaña *Elementos*).
+
+    Es un Fragment de React. Permite agrupar varios elementos sin añadir un elemento HTML adicional al DOM. No aparece 
+    ningún <fragment>: solamente aparecen los elementos HTML que contiene.
+
+
+Ejercicio 4.1 
+
+Recarga la página varias veces. ¿La hora cambia sola mientras miras la página, o solo al recargar? ¿Por qué crees que ocurre esto? Con
+lo que sabes hasta ahora basta una hipótesis; lo veremos en la siguiente unidad.
+
+Solo cambia al recargar la página,se ejecuta cuando RelojEstatico se carga.

@@ -1,4 +1,4 @@
-import { Alumno, Curso, EstadoAlumno } from "../modelos";
+import { Alumno, Curso, EstadoAlumno } from "./modelos";
 
 const alumnos: Alumno[] = [
   {
